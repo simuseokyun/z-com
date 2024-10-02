@@ -1,13 +1,13 @@
+import styles from '@/app/(beforelogin)/_component/main.module.css';
 import Image from 'next/image';
-import styles from './page.module.css';
+import zLogo from '../../../../public/zlogo.png';
 import Link from 'next/link';
-import Zlogo from '../../public/zlogo.png';
 
-export default function Home() {
+export default function Main() {
     return (
         <div className={styles.container}>
             <div className={styles.left}>
-                <Image src={Zlogo} alt="로고"></Image>
+                <Image src={zLogo} alt="logo" />
             </div>
             <div className={styles.right}>
                 <h1>지금 일어나고 있는 일</h1>
