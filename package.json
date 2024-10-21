@@ -1,27 +1,39 @@
 {
-  "name": "z-com",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@faker-js/faker": "^9.0.3",
-    "classnames": "^2.5.1",
-    "dayjs": "^1.11.13",
-    "next": "14.2.13",
-    "react": "^18",
-    "react-dom": "^18"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.13",
-    "typescript": "^5"
-  }
+    "name": "z-com",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "mock": "npx tsx watch ./src/mocks/http.ts"
+    },
+    "dependencies": {
+        "@auth/core": "^0.37.2",
+        "@faker-js/faker": "^9.0.3",
+        "classnames": "^2.5.1",
+        "dayjs": "^1.11.13",
+        "next": "14.2.13",
+        "next-auth": "^5.0.0-beta.25",
+        "react": "^18",
+        "react-dom": "^18"
+    },
+    "devDependencies": {
+        "@mswjs/http-middleware": "^0.10.1",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.13",
+        "msw": "^2.4.11",
+        "typescript": "^5"
+    },
+    "msw": {
+        "workerDirectory": [
+            "public"
+        ]
+    }
 }

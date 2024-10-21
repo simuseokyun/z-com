@@ -20,7 +20,7 @@ export default function Post({ noImage }: Props) {
         User: {
             id: 'elonmusk',
             nickname: 'Elon Musk',
-            image: '/yRsRRjGO.jpg',
+            image: faker.image.avatar(),
         },
         content: '클론코딩 라이브로 하니 너무 힘들어요 ㅠㅠ',
         createdAt: new Date(),
